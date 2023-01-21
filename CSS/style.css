@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+}
+.container{
+    max-width: 1577px;
+    margin: 0 auto;
+}
+.header-wrapper{
+    margin-bottom: 165px;
+    margin-top: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+    .header-wrapper{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav__item{
+        margin-top: 30px;
+    }
+}
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav__link{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-right: 42px;
+}
+.link__main{
+    color: #34547A;
+}
+.section-intro__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section-info__wrapper{
+    max-width: 582px;
+}
+.section-intro__image{
+    min-width: 385px;
+    min-height: 234px;
+    margin-right: 153px;
+}
+@media screen and (max-width: 1200px){
+    .section-intro__image-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 130px;
+    }
+    .section-intro__image{
+        margin-left: 153px;
+    }
+    .section-info__wrapper{
+        padding-top: 20px; 
+        max-width: 540px; 
+        text-align: center; 
+        padding-left: 0;
+    }
+    .section-intro__btn{
+        margin-top: 20px; 
+        min-width: 200px; 
+        min-height: 55px;
+    }
+}
+.section-intro__title{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+.section-intro__subtitle{
+    margin-bottom: 60px;
+}
+@media screen and (max-width: 1200px){
+    .section-intro__subtitle{
+        margin-top: 60px;
+        min-width: 200px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+.section-intro__btn{
+    color: white;
+    border: 0;
+    background-color: #34547A;
+    width: 241px;
+    height: 65px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
