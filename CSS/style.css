@@ -76,12 +76,15 @@ body{
 .section-intro__wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
 }
 .section-intro__image{
     width: 100%;
     height: auto;
+}
+.section-intro__info-wrapper{
+    flex: 0 1 auto;
 }
 .section-intro__title{
     font-weight: 500;
