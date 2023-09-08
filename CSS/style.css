@@ -40,7 +40,6 @@ body{
         width: 30px;
         height: 20px;
     }
-    
     .burger__line{
         display: block;
         width: 100%;
@@ -73,11 +72,14 @@ body{
 .link__main{
     color: #34547A;
 }
+.section-intro{
+    margin-bottom: 20px;
+}
 .section-intro__wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 .section-intro__image{
     width: 100%;
@@ -89,7 +91,17 @@ body{
 .section-intro__title{
     font-weight: 500;
     font-size: 48px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 460px) {
+    .section-intro__title{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 364px) {
+    .section-intro__title{
+        font-size: 36px;
+    }
 }
 .section-intro__subtitle{
     margin-bottom: 60px;
