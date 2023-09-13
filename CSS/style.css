@@ -13,6 +13,13 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+.header{
+    transition: 0.3s all;
+}
+.header_active{
+    height: 100vh;
+    background-color: azure;
+}
 .header-wrapper{
     padding: 25px 0 25px 0;
     display: flex;
@@ -35,28 +42,42 @@ body{
     .nav__list{
         display: none;
     }
+    .nav__list_active{
+        display: block;
+        font-size: 30px;
+    }
     .burger__item{
         position: relative;
         width: 30px;
         height: 20px;
     }
     .burger__line{
+        position: absolute;
         display: block;
         width: 100%;
         height: 2px;
         background-color: black;
+        transition: 0.5s all;
     }
     .first-line{
-        position: absolute;
         top: 0;
     }
+    .first-line_active{
+        top: 50%;
+        transform: rotate(45deg);
+    }
     .second-line{
-        position: absolute;
         top: 50%;
     }
+    .second-line_active{
+        display: none;
+    }
     .third-line{
-        position: absolute;
         top: 100%;
+    }
+    .third-line_active{
+        top: 50%;
+        transform: rotate(-45deg);
     }
 }
 .nav__item:not(:last-child){
